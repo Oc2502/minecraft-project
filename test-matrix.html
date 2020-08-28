@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div {
+        height: 15px;
+        /* 2.5vh */
+        width: 15%;
+        display: inline-block;
+        background: black;
+        border: 1px solid white;
+      }
+      .red {
+          background: red;
+      }
+
+      .game {
+        width: 100px;
+        height: 100px;
+        background: red;
+        display: flex;
+        flex-wrap: wrap;
+
+      }
+
+      .blue {
+        background: blue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="game"> </div>
+    <script>
+            // box = document.createElement('div');
+            // box.classList.add('div')
+            game= document.querySelector('.game')
+
+            function color(){
+              let matrix = [] 
+              let cols = 5;
+              let rows = 5;
+              for(let i=0; i < cols; i++){
+                matrix[i] = [];
+                    for(let j=0; j < rows; j++){
+                        // console.log('hi')
+                        matrix[i][j] =1;
+                        // box = document.createElement('div');
+                        // box.classList.add('div')
+                        // matrix[i][j] = box /// this element get div
+                        // console.dir(box)
+                        // console.log(matrix[i][j])
+                        // game.appendChild(matrix[i][j]);
+                    }
+              } 
+              console.log(matrix)
+              for(let i = 3; i < matrix.length; i++){
+                for(let j = 0; j < matrix[i].length; j++){
+
+
+                  matrix[i][j] = 0
+                  // variable = 1
+                  
+                  // variable.classList.add('blue')
+                  // console.log(' box, ', box)
+                  // // box.value='1'
+                  // console.log('work?')
+
+                }
+              }
+              console.log(matrix)
+              
+              console.log(matrix)
+              for(let i = 0; i < matrix.length; i++){
+                for(let j = 0; j < matrix[i].length; j++){
+
+                  box = document.createElement('div');
+                  box.classList.add('div')
+                  matrix[i][j] = box /// this element get div
+                  console.dir(box)
+                  console.log(matrix[i][j])
+                  game.appendChild(matrix[i][j]);
+
+
+                  if(matrix[i][j]===0){
+                    let vari = matrix[i][j]
+                    vari.classList.add('blue')
+                  }
+                  
+                  console.log(matrix)
+                }
+              }
+               return matrix 
+  
+            }
+
+            color()
+
+        // function setMatrix() {
+            //     let rows = 10;
+            //     let cols = 30;
+            //     let matrix = [];
+
+            //     let arr = new array(cols)
+            //     for(let i = 0; i < arr.length; i++) {
+            //         arr[i] = new Array(rows)
+            //         arr[i][j].classList.add('div');
+
+            //     }
+            //     console.log(arr)
+            // }
+
+
+    </script>
+  </body>
+</html>

@@ -61,12 +61,37 @@
     
 }
 
-.game-matrix {
+.game {
     width: 50vw;
     height: 95vh;
-     margin: 0 auto;
+    margin: 0 auto;
     background: chartreuse;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+.box {
+    width: 5%;
+    height: 4%;
+    background: white;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 0;
+    padding:0;
+}
 
-.grass
+.grass {
+    background-image: url("./picture/grass.jpg");
+}
+.tree {
+    background-image: url("./picture/tree-brown.jpg");
+}
+.cloud {
+    background: white;
+}
+
+.tile {
+    background-image: url("./picture/tile");
+}
