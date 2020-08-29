@@ -8,24 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <div class="toolbar">
-            <div class="toolbar__tools">
-                <button class="tool" id="pickaxe"></button>
-                <button class="tool" id="shovel"></button>
-                <button class="tool" id="axe"></button>
-                <button class="toolbar__inventory"></button>
-            </div>
-        </div>
-        <div class="landing-page">
-            <h1>MINECRAFT</h1>
-            <button class="btn start">START</button>
-        </div>
-        <div class="game-page">
-            <div class="game"></div>
+    
+    <div class="toolbar">
+        <div class="toolbar__tools">
+            <button class="tool" id="pickaxe"></button>
+            <button class="tool" id="shovel" ><img src="./picture/shovel.png" alt=""></button>
+            <button class="tool" id="axe"><img src="./picture/axe.png" alt=""></button>
+            <button class="toolbar__inventory"></button>
         </div>
     </div>
+    <div class="landing-page">
+        <h1><img id="logo" src="./picture/MinecraftLogo.png" alt=""></h1>
+        <button class="btn start" onclick="window.location.href='#gamePage'" >START</button>
+    </div>
+    <div class="game-page" id="gamePage">
+        <div class="game"></div>
+    </div>
+   
     <script src="./main.js"></script>
+    <script src="./tools.js"></script>
 </body>
 </html>
 

@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+button img{
+    width: 4vw;
+}
+
+#logo {
+    width: 50%;
+
+}
+
 .toolbar {
     width: 12vw;
     height: 100vh;
@@ -45,9 +54,13 @@
     background-image: url("./picture/main-page.png");
     height: 100vh;
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     align-items: center;
     align-content: center;
+    text-align: center;
+}
+.landing-page button {
+    padding:  0.5vw 1.5vw;
 }
 
 .game-page {
@@ -75,23 +88,50 @@
 .box {
     width: 5%;
     height: 4%;
-    background: white;
+    background: transparent;
     display: inline-block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding:0;
 }
 
 .grass {
-    background-image: url("./picture/grass.jpg");
+    background-image: url("./picture/leaf.png" );
+    background-size: cover;
 }
-.tree {
-    background-image: url("./picture/tree-brown.jpg");
-}
-.cloud {
-    background: white;
+.grass:hover {
+    border: 1px dotted white;
 }
 
-.tile {
+.tree {
+    background-image: url("./picture/tree-brown.jpg");
+    background-size: cover;
+}
+.tree:hover {
+    border: 1px dotted white;
+}
+
+.cloud {
+    background: white;
+    background-size: cover;
+}
+
+.dirt {
     background-image: url("./picture/tile");
+    background-size: cover;
+}
+.dirt:hover {
+    border: 1px dotted white;
+}
+
+.sky {
+    background: rgb(65, 140, 238);
+    background-size: cover;
+}
+.rock {
+    background-image: url(./picture/rock.png);
+    background-size: cover;
+}
+.rock:hover {
+    border: 1px dotted white;
 }

@@ -32,6 +32,7 @@ new object : game area -> invokes the start function
             }
             >>
 
+https://itc.yananas.com/git/minecraft/images/
 --------------------------------------------------------------
         
         * giv value for each element:
