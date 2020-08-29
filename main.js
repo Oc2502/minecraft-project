@@ -23,7 +23,7 @@ let gameArea = {
                 matrix[i][j] = 0;
             }
         } 
-        console.log(matrix)
+        // console.log(matrix)
         return matrix
     }
 }
@@ -71,7 +71,7 @@ gameArea.setMap = function() {
     }
 
 
-    console.log(matrix)
+    // console.log(matrix)
     return matrix
 }
 
@@ -124,7 +124,7 @@ gameArea.colorMap = function () {
             }
         }
     }
-    console.log(matrix)
+    // console.log(matrix)
     return matrix
 }
 
@@ -132,7 +132,7 @@ gameArea.colorMap = function () {
 
 
 
-startGame()
+// startGame()
 console.log(matrix)
 
 

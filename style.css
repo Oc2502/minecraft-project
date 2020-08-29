@@ -37,7 +37,13 @@ button img{
     align-content: space-between;
 
 }
-
+/* .main {
+    height: 100vh;
+    overflow: hidden;
+} */
+body {
+    overflow: hidden;
+}
 .tool {
     width: 5vw;
     height: 5vw;

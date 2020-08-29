@@ -3,6 +3,7 @@ const shovel = document.getElementById('shovel');
 const axe = document.getElementById('axe');
 
 
+
 function testIf(x, y) {
     if( (matrix[x][y] !== 0) && matrix[x][y-1] === 0) {
         return true;
@@ -29,6 +30,8 @@ function currentTool(e){
 }
 
 
+let box = document.getElementsByClassName('box')
+console.log(box)
 // function remove(e) {
     
 
